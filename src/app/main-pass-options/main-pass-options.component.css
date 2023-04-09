@@ -1,0 +1,42 @@
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+.container-options{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.pass-btn{
+  margin: 10px 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--greenColorPrimary);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms;
+}
+.pass-btn:hover{
+  background-color: #88ef8e;
+}
+.pass-btn span{
+  margin-left: 20px;
+}
+
+
+.chck{
+  margin: 10px 20px 10px 0;
+}
+.pass-char-length{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.pass-range{
+  width: 100%;
+}

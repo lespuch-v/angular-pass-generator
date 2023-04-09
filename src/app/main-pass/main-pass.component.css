@@ -1,0 +1,10 @@
+.pass-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.cont-adjc{
+  margin-bottom: 20px;
+}
+.icon-green{
+  color: var(--greenColorPrimary);
+}

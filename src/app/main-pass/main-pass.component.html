@@ -1,0 +1,7 @@
+<div class="container cont-adjc">
+  <div class="pass-cont">
+    <span>{{password ? password : 'password'}}</span>
+    <span class="material-symbols-outlined icon-green">content_copy</span>
+  </div>
+</div>
+<app-main-pass-options (passwordChanged)="onPasswordChanged($event)"></app-main-pass-options>

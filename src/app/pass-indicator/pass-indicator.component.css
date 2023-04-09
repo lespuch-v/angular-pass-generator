@@ -1,0 +1,12 @@
+.pass-strength{
+  background-color: #0b0a0f;
+  margin: 10px 0;
+}
+.progress {
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}

@@ -1,0 +1,12 @@
+.main-container {
+  background-color: #0b0a0f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: lightgray;
+}
+.pass-text {
+  margin: 20px;
+}

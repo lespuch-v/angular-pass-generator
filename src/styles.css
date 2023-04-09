@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --greenColorPrimary: #A5FFAB;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+  background-color: #24232b;
+  color: lightgray;
+  width: 400px;
+  padding: 20px;
+}

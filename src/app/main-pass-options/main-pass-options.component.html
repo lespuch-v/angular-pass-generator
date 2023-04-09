@@ -1,0 +1,43 @@
+<div class="main-container container">
+  <div class="pass-char-length">
+    <span>Character Length</span>
+    <span>{{characterRange}}</span>
+  </div>
+  <div>
+    <input
+      name="characterRange"
+      [ngModel]="characterRange"
+      value="6"
+      min="3"
+      max="24"
+      class="pass-range"
+      (change)="updateValues($event)"
+      type="range">
+  </div>
+  <div class="container-options">
+    <span>
+    <input [(ngModel)]="isUpperCaseAllowed" class="chck" id="upperCaseLetter" type="checkbox">
+      <label for="upperCaseLetter">Include Uppercase Letters</label>
+      </span>
+    <span>
+    <input [(ngModel)]="isLowerCaseAllowed" class="chck" id="lowercaseLetter" type="checkbox">
+    <label for="lowercaseLetter">Include Lowercase Letters</label>
+      </span>
+    <span>
+    <input [(ngModel)]="isNumberAllowed"  class="chck" id="includeNumbers" type="checkbox">
+     <label for="includeNumbers">Include Numbers</label>
+      </span>
+    <span>
+    <input [(ngModel)]="isSymbolsAllowed"  class="chck" id="includeSymbols" type="checkbox">
+    <label for="includeSymbols">Include Symbols</label>
+      </span>
+  </div>
+  <app-pass-indicator [password]="newPassword"></app-pass-indicator>
+  <div class="">
+    <button class="pass-btn" (click)="getPassword()">
+      generate <span class="material-symbols-outlined">
+arrow_right_alt
+</span>
+    </button>
+  </div>
+</div>

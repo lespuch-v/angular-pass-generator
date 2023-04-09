@@ -1,0 +1,11 @@
+<div class="progress">
+  <div
+    class="progress-bar"
+    role="progressbar"
+    [ngStyle]="{ width: passwordStrength + '%', backgroundColor: progressBarColor }"
+    aria-valuenow="passwordStrength"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+<div [ngStyle]="{ color: progressBarColor }">{{ passwordStrengthMessage }}</div>
